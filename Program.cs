@@ -1,102 +1,79 @@
 ﻿
-// tesk N10
 
+// // tesk N2
 
+Console.Write("Введите любое первое число для сровнения: ");
+int numberA = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите любое второе число для сровнения: ");
+int numberB = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Введите любое число: ");
-string inputNumber = Console.ReadLine();
-
-if (inputNumber.Length > 1)
+if (numberA > numberB)
 {
-    Console.WriteLine("вторая цифра введенного числа :" + inputNumber[1]);
+    Console.WriteLine(numberA+">"+numberB+":"+numberA+"=max number");
+
+    System.Console.WriteLine();
 }
 else
 {
-    Console.WriteLine("данное число :" + inputNumber + " имеет менее дувх знаков и значит я не смогу показать тебе желаемого результата:");
+    Console.WriteLine(numberA+"<"+numberB+":"+numberB+"=max number");
+
 }
 
 
 
 
 
+// // // tesk N8
 
-// tesk N13
+System.Console.Write("введите число: ");
+int N = Convert.ToInt32(Console.ReadLine());
+int start = 1;
 
-Console.Write("Введите любое число: ");
-string inputNumber = Console.ReadLine();
-
-if (inputNumber.Length > 2) 
+while (start <= N)
 {
-    Console.WriteLine("Третья цифра введенного числа :" + inputNumber[2]);
+    if (start % 2 == 0)
+
+        Console.WriteLine(start);
+    start++;
+
 }
 
-else 
+
+// tesk N4
+
+
+
+System.Console.WriteLine("введите первое числа для сровнения");
+int A = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine("введите второе числа для сровнения");
+int B = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine("введите третье числа для сровнения");
+int C = Convert.ToInt32(Console.ReadLine());
+int max = A;
+
+if (A<B) max=B;
+if (max<C) max=C;
+System.Console.WriteLine(+max+"=max number");
+
+
+
+// tesk N6
+
+
+
+System.Console.WriteLine("введите число для определения чётности: ");
+int z = Convert.ToInt32(Console.ReadLine());
+
+
+if (z % 2 == 0) 
 {
-    Console.WriteLine("данное число :" + inputNumber + " имеет менее трёх знаков и значит я не смогу показать тебе желаемого результата:" );
+    System.Console.WriteLine(+z+ ": является чётным.");
 }
-
-
-
-
-
-
-// // tesk N15
-
-
-System.Console.Write("Введите порядкоый номер дня недели: ");
-int dayNumber = Convert.ToInt32(Console.ReadLine());
-
-if (dayNumber == 1)
+else
 {
-    System.Console.Write("monday: ");
-}
-
-if (dayNumber == 2)
-{
-    System.Console.Write("Tuesday: ");
-}
-
-if (dayNumber == 3)
-{
-    System.Console.Write("Wednesday: ");
-}
-
-if (dayNumber == 4)
-{
-    System.Console.Write("Thursday: ");
-}
-
-if (dayNumber == 5)
-{
-    System.Console.Write("Friday: ");
-}
-
-if (dayNumber == 6)
-{
-    System.Console.Write("Saturday: ");
-}
-
-if (dayNumber == 7)
-{
-    System.Console.Write("sunday: ");
-}
-
-
-
-if (dayNumber < 5||dayNumber==5)
-{
-    System.Console.Write(+dayNumber + " working ");
-}
-
-if(dayNumber==6||dayNumber==7)
-{
-    System.Console.Write(+dayNumber + " non-working ");
-}
-
-
-if (dayNumber > 7 || dayNumber == 8)
-{
-
-    System.Console.Write("в неделе нет " + dayNumber + " дней");
+ System.Console.WriteLine(+z+ ": не является чётным числом.");
 
 }
+
+    
+
