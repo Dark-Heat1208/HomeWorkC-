@@ -3,17 +3,17 @@
 
 
 
-// Console.Write("Введите любое число: ");
-// string inputNumber = Console.ReadLine();
+Console.Write("Введите любое число: ");
+string inputNumber = Console.ReadLine();
 
-// if (inputNumber.Length > 1)
-// {
-//     Console.WriteLine("вторая цифра введенного числа :" + inputNumber[1]);
-// }
-// else
-// {
-//     Console.WriteLine("данное число :" + inputNumber + " имеет менее дувх знаков и значит я не смогу показать тебе желаемого результата:");
-// }
+if (inputNumber.Length > 1)
+{
+    Console.WriteLine("вторая цифра введенного числа :" + inputNumber[1]);
+}
+else
+{
+    Console.WriteLine("данное число :" + inputNumber + " имеет менее дувх знаков и значит я не смогу показать тебе желаемого результата:");
+}
 
 
 
@@ -22,18 +22,18 @@
 
 // tesk N13
 
-// Console.Write("Введите любое число: ");
-// string inputNumber = Console.ReadLine();
+Console.Write("Введите любое число: ");
+string inputNumber = Console.ReadLine();
 
-// if (inputNumber.Length > 2) 
-// {
-//     Console.WriteLine("Третья цифра введенного числа :" + inputNumber[2]);
-// }
+if (inputNumber.Length > 2) 
+{
+    Console.WriteLine("Третья цифра введенного числа :" + inputNumber[2]);
+}
 
-// else 
-// {
-//     Console.WriteLine("данное число :" + inputNumber + " имеет менее трёх знаков и значит я не смогу показать тебе желаемого результата:" );
-// }
+else 
+{
+    Console.WriteLine("данное число :" + inputNumber + " имеет менее трёх знаков и значит я не смогу показать тебе желаемого результата:" );
+}
 
 
 
